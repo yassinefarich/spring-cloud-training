@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: products-micro-service
+server:
+  port: 8002
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8001/eureka/
