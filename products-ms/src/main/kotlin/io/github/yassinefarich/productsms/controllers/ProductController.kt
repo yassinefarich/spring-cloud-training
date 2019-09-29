@@ -11,7 +11,7 @@ class ProductController {
     data class Response(val products: List<Product>,
                         val currentTimestamp: LocalDateTime = LocalDateTime.now())
 
-    @GetMapping("/getAllProducts")
+    @GetMapping("/")
     fun getAllProducts(): Response =
             Response(listOf(Product(name = "Lenovo", price = 500.4),
                     Product(name = "Dell", price = 700.4),

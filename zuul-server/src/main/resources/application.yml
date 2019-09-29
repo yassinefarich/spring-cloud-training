@@ -15,3 +15,6 @@ zuul:
     products:
       path : /products/**
       serviceId: products-micro-service
+    commads:
+      path: /commands/**
+      url: http://localhost:8004/
